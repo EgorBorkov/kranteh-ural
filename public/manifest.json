@@ -1,0 +1,23 @@
+{
+  "name": "КранТех-Урал",
+  "short_name": "КТ-Урал",
+  "start_url": "http://kranteh-ural.ru/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003366",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "preview.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "lang": "ru-RU"
+}

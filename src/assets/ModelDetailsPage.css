@@ -1,0 +1,419 @@
+/* ModelDetailsPage.css */
+.model-details { /* селектор или начало блока */
+  padding: 40px 0; /* свойство: padding */
+}
+
+/* Заголовок страницы */
+.model-details h2 { /* селектор или начало блока */
+  color: #003087; /* свойство: color */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-weight: 700; /* свойство: font-weight */
+  font-size: 2rem; /* свойство: font-size */
+  margin-bottom: 20px; /* свойство: margin-bottom */
+  text-align: center; /* свойство: text-align */
+}
+
+/* Секция с баннером: изображение слева, текст справа */
+.banner-section { /* селектор или начало блока */
+  display: flex; /* свойство: display */
+  gap: 20px; /* свойство: gap */
+  margin-bottom: 30px; /* свойство: margin-bottom */
+  justify-content: center; /* свойство: justify-content */
+  align-items: center; /* свойство: align-items */
+}
+
+/* Изображение в баннере */
+.banner-image { /* селектор или начало блока */
+  height: 100%; /* свойство: height */
+  border-radius: 10px; /* свойство: border-radius */
+  object-fit: cover; /* свойство: object-fit */
+}
+
+/* Контейнер для текстовых блоков в баннере */
+.banner-text { /* селектор или начало блока */
+  width: 50%; /* свойство: width */
+  display: flex; /* свойство: display */
+  flex-direction: column; /* свойство: flex-direction */
+  gap: 15px; /* свойство: gap */
+}
+
+/* Текстовый блок в баннере */
+.banner-block { /* селектор или начало блока */
+  background: #E6F0FA; /* свойство: background */
+  padding: 15px; /* свойство: padding */
+  border-radius: 10px; /* свойство: border-radius */
+}
+
+/* Текст внутри текстового блока */
+.banner-block p { /* селектор или начало блока */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-weight: 400; /* свойство: font-weight */
+  color: #000000; /* свойство: color */
+  margin: 0; /* свойство: margin */
+  font-size: 1.1rem; /* свойство: font-size */
+}
+
+/* Выделение важных частей текста */
+.highlight { /* селектор или начало блока */
+  font-weight: 700; /* свойство: font-weight */
+  color: #003087; /* свойство: color */
+}
+
+/* Контейнер для списка моделей (аккордеон) */
+.model-list { /* селектор или начало блока */
+  display: flex; /* свойство: display */
+  flex-direction: column; /* свойство: flex-direction */
+  gap: 15px; /* свойство: gap */
+}
+
+/* Элемент аккордеона (категория моделей) */
+.model-item { /* селектор или начало блока */
+  background: #E6F0FA; /* свойство: background */
+  border-radius: 10px; /* свойство: border-radius */
+  overflow: hidden; /* свойство: overflow */
+}
+
+/* Заголовок категории в аккордеоне */
+.model-header { /* селектор или начало блока */
+  display: flex; /* свойство: display */
+  align-items: center; /* свойство: align-items */
+  justify-content: space-between; /* свойство: justify-content */
+  padding: 15px 20px; /* свойство: padding */
+  cursor: pointer; /* свойство: cursor */
+  transition: background 0.3s ease; /* свойство: transition */
+}
+
+/* Эффект наведения на заголовок категории */
+.model-header:hover { /* селектор или начало блока */
+  background: #D3E2F5; /* свойство: background */
+}
+
+/* Заголовок категории */
+.model-header h3 { /* селектор или начало блока */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-weight: 400; /* свойство: font-weight */
+  font-size: 1.2rem; /* свойство: font-size */
+  color: #000000; /* свойство: color */
+  margin: 0; /* свойство: margin */
+}
+
+/* Иконка аккордеона (+/-) */
+.accordion-icon { /* селектор или начало блока */
+  font-size: 1.2rem; /* свойство: font-size */
+  color: #003087; /* свойство: color */
+  transition: transform 0.3s ease; /* свойство: transition */
+}
+
+/* Стиль иконки при раскрытом аккордеоне */
+.accordion-icon.open { /* селектор или начало блока */
+  transform: rotate(180deg); /* свойство: transform */
+}
+
+/* Контент аккордеона (скрыт по умолчанию) */
+.model-content { /* селектор или начало блока */
+  max-height: 0; /* свойство: max-height */
+  overflow: hidden; /* свойство: overflow */
+  transition: max-height 0.3s ease; /* свойство: transition */
+}
+
+/* Контент аккордеона при раскрытии */
+.model-content.open { /* селектор или начало блока */
+  max-height: none; /* Убираем фиксированное значение, чтобы вместить все карточки */ /* свойство: max-height */
+}
+
+/* Сетка для карточек моделей */
+.model-grid { /* селектор или начало блока */
+  display: grid; /* свойство: display */
+  grid-template-columns: repeat(4, 1fr); /* свойство: grid-template-columns */
+  gap: 20px; /* свойство: gap */
+  padding: 20px; /* свойство: padding */
+  background: #F5F9FF; /* свойство: background */
+}
+
+/* Карточка модели */
+.model-card { /* селектор или начало блока */
+  background: #E6F0FA; /* свойство: background */
+  border-radius: 10px; /* свойство: border-radius */
+  padding: 15px; /* свойство: padding */
+  display: flex; /* свойство: display */
+  flex-direction: column; /* свойство: flex-direction */
+  align-items: center; /* свойство: align-items */
+  text-align: center; /* свойство: text-align */
+  justify-content: space-between; /* свойство: justify-content */
+}
+
+/* Изображение в карточке модели */
+.model-card-image { /* селектор или начало блока */
+  width: 100%; /* свойство: width */
+  height: 120px; /* свойство: height */
+  object-fit: contain; /* свойство: object-fit */
+  border-radius: 5px; /* свойство: border-radius */
+  margin-bottom: 10px; /* свойство: margin-bottom */
+}
+
+/* Заголовок карточки (название модели) */
+.model-card h4 { /* селектор или начало блока */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-weight: 400; /* свойство: font-weight */
+  font-size: 1rem; /* свойство: font-size */
+  color: #000000; /* свойство: color */
+  margin: 0 0 10px 0; /* свойство: margin */
+}
+
+/* Список характеристик в карточке */
+.characteristics-list { /* селектор или начало блока */
+  list-style: none; /* свойство: list-style */
+  padding: 0; /* свойство: padding */
+  margin: 0 0 15px 0; /* свойство: margin */
+  width: 100%; /* свойство: width */
+}
+
+/* Элемент списка характеристик */
+.characteristics-list li { /* селектор или начало блока */
+  display: flex; /* свойство: display */
+  justify-content: space-between; /* свойство: justify-content */
+  padding: 5px 0; /* свойство: padding */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-size: 0.85rem; /* свойство: font-size */
+  color: #000000; /* свойство: color */
+}
+
+/* Метка характеристики (например, "Тяговое усилие") */
+.char-label { /* селектор или начало блока */
+  font-weight: 400; /* свойство: font-weight */
+}
+
+/* Значение характеристики */
+.char-value { /* селектор или начало блока */
+  text-align: right; /* свойство: text-align */
+  font-weight: 700; /* свойство: font-weight */
+}
+
+/* Футер карточки (цена и кнопка) */
+.model-card-footer { /* селектор или начало блока */
+  display: flex; /* свойство: display */
+  justify-content: space-between; /* свойство: justify-content */
+  align-items: center; /* свойство: align-items */
+  width: 100%; /* свойство: width */
+}
+
+/* Цена в карточке */
+.model-price { /* селектор или начало блока */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-weight: 700; /* свойство: font-weight */
+  font-size: 1rem; /* свойство: font-size */
+  color: #003087; /* свойство: color */
+}
+
+/* Кнопка "В корзину" */
+.buy-button { /* селектор или начало блока */
+  background: #003087; /* свойство: background */
+  color: white; /* свойство: color */
+  border: none; /* свойство: border */
+  padding: 8px 16px; /* свойство: padding */
+  border-radius: 5px; /* свойство: border-radius */
+  cursor: pointer; /* свойство: cursor */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-size: 0.9rem; /* свойство: font-size */
+  transition: background 0.3s ease; /* свойство: transition */
+}
+
+/* Эффект наведения на кнопку "В корзину" */
+.buy-button:hover { /* селектор или начало блока */
+  background: #00205B; /* свойство: background */
+}
+
+/* Ссылка "Вернуться в каталог" */
+.back-link { /* селектор или начало блока */
+  display: inline-block; /* свойство: display */
+  margin-top: 20px; /* свойство: margin-top */
+  color: #003087; /* свойство: color */
+  font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+  font-size: 1rem; /* свойство: font-size */
+  text-decoration: none; /* свойство: text-decoration */
+  text-align: center; /* свойство: text-align */
+  width: 100%; /* свойство: width */
+}
+
+/* Эффект наведения на ссылку "Вернуться в каталог" */
+.back-link:hover { /* селектор или начало блока */
+  text-decoration: underline; /* свойство: text-decoration */
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) { /* селектор или начало блока */
+  .model-details h2 { /* селектор или начало блока */
+    font-size: 7vw; /* свойство: font-size */
+  }
+
+  .model-grid { /* селектор или начало блока */
+    grid-template-columns: repeat(2, 1fr); /* свойство: grid-template-columns */
+  }
+
+  .banner-section { /* селектор или начало блока */
+    flex-direction: column; /* свойство: flex-direction */
+  }
+
+  .banner-text { /* селектор или начало блока */
+    width: 100%; /* свойство: width */
+  }
+
+  .banner-block p { /* селектор или начало блока */
+    font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+    font-weight: 400; /* свойство: font-weight */
+    color: #000000; /* свойство: color */
+    margin: 0; /* свойство: margin */
+    font-size: 2.5vw; /* свойство: font-size */
+  }
+
+  .model-header h3{ /* селектор или начало блока */
+    font-size: 2.5vw; /* свойство: font-size */
+  }
+
+  .model-card h4 { /* селектор или начало блока */
+    font-size: clamp(1rem, 5vw, 1.5rem); /* свойство: font-size */
+  }
+
+  .characteristics-list li, .model-price, .buy-button, .back-link{ /* селектор или начало блока */
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .banner-image { /* селектор или начало блока */
+    max-height: 240px; /* Ограничение высоты изображения на планшетах */ /* свойство: max-height */
+  }
+}
+
+@media (max-width: 768px) { /* селектор или начало блока */
+  .model-details h2 { /* селектор или начало блока */
+    font-size: 6vw; /* свойство: font-size */
+  }
+
+  .model-grid { /* селектор или начало блока */
+    grid-template-columns: repeat(2, 1fr); /* свойство: grid-template-columns */
+  }
+
+  .accordion-icon { /* селектор или начало блока */
+    font-size: 1rem; /* свойство: font-size */
+  }
+
+  .model-card-image { /* селектор или начало блока */
+    height: 100px; /* свойство: height */
+  }
+
+  .buy-button { /* селектор или начало блока */
+    padding: 6px 12px; /* свойство: padding */
+    font-size: 1.1rem; /* свойство: font-size */
+  }
+
+  .banner-image { /* селектор или начало блока */
+    max-height: 240px; /* Ограничение высоты изображения на мобильных устройствах */ /* свойство: max-height */
+  }
+}
+
+@media (max-width: 480px) { /* селектор или начало блока */
+  .model-grid { /* селектор или начало блока */
+    grid-template-columns: 1fr; /* свойство: grid-template-columns */
+  }
+
+  .accordion-icon { /* селектор или начало блока */
+    font-size: 0.9rem; /* свойство: font-size */
+  }
+
+  .model-card-image { /* селектор или начало блока */
+    height: 100px; /* свойство: height */
+  }
+
+  .buy-button { /* селектор или начало блока */
+    padding: 5px 10px; /* свойство: padding */
+    font-size: 1rem; /* свойство: font-size */
+  }
+
+  .banner-image { /* селектор или начало блока */
+    max-height: 140px; /* Ограничение высоты изображения на маленьких экранах */ /* свойство: max-height */
+  }
+}
+
+  .banner-block p { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    line-height: 1.4; /* свойство: line-height */
+  }
+
+  .model-header { /* селектор или начало блока */
+    flex-wrap: wrap;
+    flex-direction: row; /* свойство: flex-direction */
+    align-items: flex-start; /* свойство: align-items */
+    gap: 10px; /* свойство: gap */
+  }
+
+  .model-header h2, /* селектор или начало блока */
+  .model-header p { /* селектор или начало блока */
+    font-size: clamp(16px, 4vw, 20px); /* свойство: font-size */
+  }
+
+  .back-link { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    display: inline-block; /* свойство: display */
+    margin-top: 12px; /* свойство: margin-top */
+  }
+
+  .model-header h2, /* селектор или начало блока */
+  .model-header p { /* селектор или начало блока */
+    font-size: clamp(16px, 4vw, 20px); /* свойство: font-size */
+    line-height: 1.3; /* свойство: line-height */
+  }
+
+  .model-content.open { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    line-height: 1.5; /* свойство: line-height */
+    padding: 10px; /* свойство: padding */
+  }
+
+  .model-content p, /* селектор или начало блока */
+  .model-content li { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    line-height: 1.5; /* свойство: line-height */
+  }
+
+  .back-link { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    display: inline-block; /* свойство: display */
+    margin-top: 12px; /* свойство: margin-top */
+  }
+
+@media (max-width: 768px) { /* селектор или начало блока */
+  .model-header { /* селектор или начало блока */
+    flex-direction: row; /* свойство: flex-direction */
+    align-items: center; /* свойство: align-items */
+    gap: 8px; /* свойство: gap */
+    padding: 10px; /* свойство: padding */
+  }
+
+  .model-header h2, /* селектор или начало блока */
+  .model-header p, /* селектор или начало блока */
+  .model-header h3 { /* селектор или начало блока */
+    font-size: clamp(16px, 4vw, 20px); /* свойство: font-size */
+    line-height: 1.3; /* свойство: line-height */
+    margin: 0; /* свойство: margin */
+  }
+
+  .model-header h3 { /* селектор или начало блока */
+    font-size: clamp(1rem, 4.5vw, 1.6rem); /* свойство: font-size */
+    font-weight: 500; /* свойство: font-weight */
+  }
+
+  .model-content.open { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    line-height: 1.5; /* свойство: line-height */
+    padding: 10px; /* свойство: padding */
+  }
+
+  .model-content + * { /* селектор или начало блока */
+    display: none; /* свойство: display */
+  }
+
+  .back-link { /* селектор или начало блока */
+    font-size: clamp(14px, 4vw, 18px); /* свойство: font-size */
+    display: inline-block; /* свойство: display */
+    margin-top: 12px; /* свойство: margin-top */
+  }
+}

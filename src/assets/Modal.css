@@ -1,0 +1,92 @@
+.modal-overlay { /* селектор или начало блока */
+  position: fixed; /* свойство: position */
+  inset: 0; /* свойство: inset */
+  background: rgba(0, 0, 0, 0.5); /* свойство: background */
+  display: flex; /* свойство: display */
+  justify-content: center; /* свойство: justify-content */
+  align-items: center; /* свойство: align-items */
+  z-index: 1000; /* свойство: z-index */
+  padding: 1rem; /* свойство: padding */
+}
+
+.modal-content { /* селектор или начало блока */
+  background: #ffffff; /* свойство: background */
+  padding: 2rem; /* свойство: padding */
+  max-width: 400px; /* свойство: max-width */
+  width: 100%; /* свойство: width */
+  border-radius: 12px; /* свойство: border-radius */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* свойство: box-shadow */
+  position: relative; /* свойство: position */
+  animation: fadeIn 0.25s ease-in-out; /* свойство: animation */
+}
+
+.modal-close { /* селектор или начало блока */
+  position: absolute; /* свойство: position */
+  top: 12px; /* свойство: top */
+  right: 12px; /* свойство: right */
+  background: none; /* свойство: background */
+  border: none; /* свойство: border */
+  font-size: clamp(20px, 2vw, 24px); /* свойство: font-size */
+  color: #003087; /* свойство: color */
+  cursor: pointer; /* свойство: cursor */
+}
+
+.modal-content h2 { /* селектор или начало блока */
+  font-size: 1.25rem; /* свойство: font-size */
+  margin-bottom: 1.25rem; /* свойство: margin-bottom */
+  color: #222; /* свойство: color */
+}
+
+.modal-content .form-group { /* селектор или начало блока */
+  margin-bottom: 1rem; /* свойство: margin-bottom */
+}
+
+.modal-content label { /* селектор или начало блока */
+  display: block; /* свойство: display */
+  margin-bottom: 0.25rem; /* свойство: margin-bottom */
+  font-size: 0.9rem; /* свойство: font-size */
+  color: #444; /* свойство: color */
+}
+
+.modal-content input { /* селектор или начало блока */
+  width: 100%; /* свойство: width */
+  padding: 0.6rem; /* свойство: padding */
+  border-radius: 6px; /* свойство: border-radius */
+  border: 1px solid #ccc; /* свойство: border */
+  font-size: 1rem; /* свойство: font-size */
+}
+
+.modal-content .submit-button { /* селектор или начало блока */
+  width: 100%; /* свойство: width */
+  padding: 0.75rem; /* свойство: padding */
+  background: #003087; /* свойство: background */
+  color: #fff; /* свойство: color */
+  font-size: 1rem; /* свойство: font-size */
+  border: none; /* свойство: border */
+  border-radius: 8px; /* свойство: border-radius */
+  cursor: pointer; /* свойство: cursor */
+  transition: background 0.2s; /* свойство: transition */
+}
+
+.modal-content .submit-button:disabled { /* селектор или начало блока */
+  background: #7a7a7a; /* свойство: background */
+  cursor: not-allowed; /* свойство: cursor */
+}
+
+.modal-content .form-status { /* селектор или начало блока */
+  margin-top: 0.75rem; /* свойство: margin-top */
+  font-size: 0.9rem; /* свойство: font-size */
+  color: #333; /* свойство: color */
+  text-align: center; /* свойство: text-align */
+}
+
+@keyframes fadeIn { /* селектор или начало блока */
+  from { /* селектор или начало блока */
+    opacity: 0; /* свойство: opacity */
+    transform: scale(0.95); /* свойство: transform */
+  }
+  to { /* селектор или начало блока */
+    opacity: 1; /* свойство: opacity */
+    transform: scale(1); /* свойство: transform */
+  }
+}

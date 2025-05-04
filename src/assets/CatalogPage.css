@@ -1,0 +1,183 @@
+/* CatalogPage.css */
+.catalog { /* селектор или начало блока */
+    padding: 40px 0; /* свойство: padding */
+  }
+  
+  .catalog h2 { /* селектор или начало блока */
+    color: #003087; /* свойство: color */
+    font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+    font-weight: 700; /* свойство: font-weight */
+    font-size: 2rem; /* свойство: font-size */
+    margin-bottom: 20px; /* свойство: margin-bottom */
+    text-align: center; /* свойство: text-align */
+  }
+  
+  .catalog-tabs { /* селектор или начало блока */
+    display: flex; /* свойство: display */
+    justify-content: center; /* свойство: justify-content */
+    gap: 10px; /* свойство: gap */
+    margin-bottom: 30px; /* свойство: margin-bottom */
+    flex-wrap: wrap; /* свойство: flex-wrap */
+  }
+  
+  .tab-button { /* селектор или начало блока */
+    background: #E6F0FA; /* свойство: background */
+    border: 2px solid #003087; /* свойство: border */
+    color: #003087; /* свойство: color */
+    padding: 10px 20px; /* свойство: padding */
+    border-radius: 5px; /* свойство: border-radius */
+    cursor: pointer; /* свойство: cursor */
+    font-size: 1.1rem; /* свойство: font-size */
+    font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+    font-weight: 400; /* свойство: font-weight */
+    transition: background 0.3s ease, color 0.3s ease; /* свойство: transition */
+  }
+  
+  .tab-button.active { /* селектор или начало блока */
+    background: #003087; /* свойство: background */
+    color: white; /* свойство: color */
+  }
+  
+  .tab-button:hover { /* селектор или начало блока */
+    background: #003087; /* свойство: background */
+    color: white; /* свойство: color */
+  }
+  
+  .catalog-content { /* селектор или начало блока */
+    display: flex; /* свойство: display */
+    justify-content: center; /* свойство: justify-content */
+  }
+  
+  .catalog-grid { /* селектор или начало блока */
+    display: grid; /* свойство: display */
+    grid-template-columns: repeat(4, 1fr); /* свойство: grid-template-columns */
+    gap: 20px; /* свойство: gap */
+    width: 100%; /* свойство: width */
+    max-width: 1200px; /* свойство: max-width */
+  }
+  
+  .catalog-item { /* селектор или начало блока */
+    background: #E6F0FA; /* свойство: background */
+    border-radius: 10px; /* свойство: border-radius */
+    padding: 20px; /* свойство: padding */
+    text-align: center; /* свойство: text-align */
+    display: flex; /* свойство: display */
+    flex-direction: column; /* свойство: flex-direction */
+    align-items: center; /* свойство: align-items */
+    justify-content: space-between; /* свойство: justify-content */
+    height: 300px; /* свойство: height */
+    box-sizing: border-box; /* свойство: box-sizing */
+    transition: transform 0.3s ease, background 0.3s ease; /* свойство: transition */
+    text-decoration: none; /* Убираем подчеркивание для ссылки */ /* свойство: text-decoration */
+    color: inherit; /* Сохраняем цвет текста */ /* свойство: color */
+  }
+  
+  .catalog-item:hover { /* селектор или начало блока */
+    transform: scale(1.05); /* свойство: transform */
+    background: #D3E2F5; /* свойство: background */
+  }
+  
+  .catalog-item img { /* селектор или начало блока */
+    width: 100%; /* свойство: width */
+    height: 160px; /* свойство: height */
+    object-fit: contain; /* свойство: object-fit */
+    border-radius: 5px; /* свойство: border-radius */
+    margin-bottom: 15px; /* свойство: margin-bottom */
+  }
+  
+  .catalog-item h3 { /* селектор или начало блока */
+    font-size: 1.1rem; /* свойство: font-size */
+    font-family: 'Gotham Pro', sans-serif; /* свойство: font-family */
+    font-weight: 400; /* свойство: font-weight */
+    color: #000000; /* свойство: color */
+    margin: 0; /* свойство: margin */
+    flex-grow: 1; /* свойство: flex-grow */
+    display: flex; /* свойство: display */
+    align-items: center; /* свойство: align-items */
+    text-align: center; /* свойство: text-align */
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 1024px) { /* селектор или начало блока */
+    .catalog-grid { /* селектор или начало блока */
+      grid-template-columns: repeat(3, 1fr); /* свойство: grid-template-columns */
+    }
+  
+    .catalog-item { /* селектор или начало блока */
+      height: 280px; /* свойство: height */
+    }
+  
+    .catalog-item img { /* селектор или начало блока */
+      height: 140px; /* свойство: height */
+    }
+  
+    .catalog-item h3 { /* селектор или начало блока */
+      font-size: 1.1rem; /* свойство: font-size */
+    }
+  }
+  
+  @media (max-width: 768px) { /* селектор или начало блока */
+    .catalog-grid { /* селектор или начало блока */
+      grid-template-columns: repeat(2, 1fr); /* свойство: grid-template-columns */
+    }
+  
+    .catalog h2 { /* селектор или начало блока */
+      font-size: 1.6rem; /* свойство: font-size */
+    }
+  
+    .tab-button { /* селектор или начало блока */
+      padding: 8px 16px; /* свойство: padding */
+      font-size: 0.9rem; /* свойство: font-size */
+    }
+  
+    .catalog-item { /* селектор или начало блока */
+      height: 260px; /* свойство: height */
+    }
+  
+    .catalog-item img { /* селектор или начало блока */
+      height: 120px; /* свойство: height */
+    }
+  
+    .catalog-item h3 { /* селектор или начало блока */
+      font-size: 1rem; /* свойство: font-size */
+    }
+  }
+  
+  @media (max-width: 480px) { /* селектор или начало блока */
+    .catalog-grid { /* селектор или начало блока */
+      grid-template-columns: 1fr; /* свойство: grid-template-columns */
+    }
+  
+    .catalog h2 { /* селектор или начало блока */
+      font-size: 1.4rem; /* свойство: font-size */
+    }
+  
+    .tab-button { /* селектор или начало блока */
+      padding: 6px 14px; /* свойство: padding */
+      font-size: 1.2rem; /* свойство: font-size */
+    }
+  
+    .catalog-item { /* селектор или начало блока */
+      height: 240px; /* свойство: height */
+    }
+  
+    .catalog-item img { /* селектор или начало блока */
+      height: 100px; /* свойство: height */
+    }
+  
+    .catalog-item h3 { /* селектор или начало блока */
+      font-size: 1.1rem; /* свойство: font-size */
+    }
+  }
+/* ------------------- АДАПТИВНОСТЬ: .catalog-item ------------------- */
+@media (max-width: 480px) { /* селектор или начало блока */
+  .catalog-item { /* селектор или начало блока */
+    display: flex; /* flex-контейнер */ /* свойство: display */
+    flex-direction: column; /* вертикальное расположение */ /* свойство: flex-direction */
+    align-items: center; /* по центру */ /* свойство: align-items */
+    justify-content: center; /* по центру */ /* свойство: justify-content */
+    min-height: 200px; /* минимальная высота */ /* свойство: min-height */
+    text-align: center; /* текст по центру */ /* свойство: text-align */
+    font-size: clamp(14px, 4vw, 18px); /* адаптивный текст */ /* свойство: font-size */
+  }
+}
