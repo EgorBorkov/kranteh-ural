@@ -8,7 +8,7 @@
 
 ## 🌐 Онлайн-доступ
 
-▶️ [http://kranteh-ural.ru/](http://kranteh-ural.ru/)
+▶️ [https://kranteh-ural.vercel.app/](https://kranteh-ural.vercel.app/)
 
 ---
 

@@ -2,7 +2,7 @@
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
 
-const sitemap = new SitemapStream({ hostname: 'https://krenteh-ural.ru' });
+const sitemap = new SitemapStream({ hostname: 'https://kranteh-ural.vercel.app/' });
 const writeStream = createWriteStream('./public/sitemap.xml');
 
 const routes = [

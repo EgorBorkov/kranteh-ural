@@ -61,7 +61,7 @@ const App = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "КранТех-Урал",
-            "url": "http://kranteh-ural.ru/",
+            "url": "https://kranteh-ural.vercel.app/",
             "logo": "%PUBLIC_URL%/logo.svg",
             "contactPoint": [
               {

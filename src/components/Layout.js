@@ -16,7 +16,7 @@ const Layout = () => {
         <meta property="og:title" content="КранТех-Урал | Электродвигатели и оборудование" />
         <meta property="og:description" content="Продажа электродвигателей, редукторов и подъёмного оборудования в Челябинске и по всей России." />
         <meta property="og:image" content="%PUBLIC_URL%/preview.jpg" />
-        <meta property="og:url" content="https://крантех-урал.рф" />
+        <meta property="og:url" content="https://kranteh-ural.vercel.app/" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       </Helmet>
 

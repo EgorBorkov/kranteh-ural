@@ -1,7 +1,7 @@
 {
   "name": "КранТех-Урал",
   "short_name": "КТ-Урал",
-  "start_url": "http://kranteh-ural.ru/",
+  "start_url": "https://kranteh-ural.vercel.app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#003366",

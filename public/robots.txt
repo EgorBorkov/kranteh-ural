@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://kranteh-ural.ru/sitemap.xml
+Sitemap: https://kranteh-ural.vercel.app/sitemap.xml
